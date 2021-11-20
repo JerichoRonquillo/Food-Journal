@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 const element = (
     <div>
         <header>
@@ -6,3 +8,18 @@ const element = (
     </div>
 )
 ReactDOM.render(element, document.getElementById('root'));
+
+function foodForm() {
+    const [food, setFood] = useState;
+    
+    return (
+        <form>
+            <label>What did you eat today?
+                <input type="text"></input>
+                <button onClick={() => setFood(food)}>
+                    Submit
+                </button>
+            </label>
+        </form>
+    )
+}
